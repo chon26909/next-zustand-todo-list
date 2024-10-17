@@ -26,7 +26,7 @@ export const useTaskStore = create<State & Actions>()((set) => ({
         set((state) => ({
             tasks: [
                 ...state.tasks,
-                { id: '', title, description, status: 'TODO' }
+                { id: uuid.toString(), title, description, status: 'TODO' }
             ]
         })),
 
